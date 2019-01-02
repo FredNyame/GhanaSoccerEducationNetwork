@@ -1,1 +1,116 @@
-/* No CSS *//*# sourceMappingURL=main.css.map */
+@import url("https://rsms.me/inter/inter-ui.css");
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: 'Inter UI var alt', sans-serif;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html, body {
+  font-family: 'Inter UI', sans-serif;
+  line-height: 1.6;
+}
+
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.showcase {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, right top, left bottom, from(#000000), to(#353531));
+  background: linear-gradient(top right, #000000, #353531);
+}
+
+header {
+  width: 100%;
+  height: 5rem;
+}
+
+header.top {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #333;
+  padding: 10px 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  z-index: 10;
+}
+
+header.top a#logo {
+  color: #fff;
+}
+
+header.top .nav_ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header.top .nav_ul .nav_li {
+  padding: 0 20px;
+}
+
+header.top .nav_ul .nav_li a {
+  font-size: 0.83rem;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+}
+
+header.top .nav_ul .nav_li:last-child {
+  padding: 0 0 0 20px;
+}
+
+#banner {
+  padding-top: 15vh;
+}
+
+#banner .container h1 {
+  color: #fff;
+  font-size: 4.7rem;
+  line-height: 1.4;
+  margin-bottom: 1.3rem;
+}
+
+#banner .container p {
+  color: #fff;
+  font-weight: normal;
+  font-size: 1.13rem;
+  line-height: 1.5;
+  margin-bottom: 4rem;
+}
+
+#banner .container a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.13rem;
+}
+
+.btn {
+  height: 4.2rem;
+  padding: 1.45rem 2.5rem;
+  border-radius: 2px;
+}
+
+.btn-primary {
+  background: #F01D1D;
+}
+/*# sourceMappingURL=main.css.map */

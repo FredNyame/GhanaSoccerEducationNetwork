@@ -1,0 +1,27 @@
+//Font Import
+@import url('https://rsms.me/inter/inter-ui.css');
+@supports (font-variation-settings: normal) {
+  html { font-family: 'Inter UI var alt', sans-serif; }
+}
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+html,body { 
+  font-family: 'Inter UI', sans-serif; 
+  line-height: 1.6;
+}
+.container{
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+$primary: #fff;
+$btnprimary: #F01D1D;
+$Head: #120404;
+$subHead: #353531;
+$pColor: #575757;

@@ -1,8 +1,21 @@
 //Font Import
 @import url('https://rsms.me/inter/inter-ui.css');
+
 @supports (font-variation-settings: normal) {
-  html { font-family: 'Inter UI var alt', sans-serif; }
+  html,body { font-family: 'Inter UI var alt', sans-serif; }
 }
+@font-face{
+  font-family: 'Inter';
+  src: url(../fonts/Inter-UI-Regular.woff);
+  font-weight: 300 !important;
+}
+
+$primary: #fff;
+$btnprimary: #F01D1D;
+$Head: #120404;
+$subHead: #353531;
+$pColor: #575757;
+
 *{
   margin: 0;
   padding: 0;
@@ -14,14 +27,40 @@ html,body {
   font-family: 'Inter UI', sans-serif; 
   line-height: 1.6;
 }
+.row{
+  width: 100%;
+  padding: 120px 0px 130px 0px;
+}
 .container{
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  padding: 0 10px;
+}
+.bgk_change{
+  width: 100%;
+  background: #f9f9f9;
+}
+.top_heading{
+  margin-bottom: 3.75rem;
+  color: $Head;
+  text-align: center;
+  font-size: 2.65rem;
+  line-height: 1.4;
+}
+.col-row{
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(348px, 1fr)); 
+  .col-3{
+    background: $primary;
+    border-radius: 2px;
+    padding: 40px 20px 90px 20px;
+    .sub_heading{
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
 }
 
-$primary: #fff;
-$btnprimary: #F01D1D;
-$Head: #120404;
-$subHead: #353531;
-$pColor: #575757;

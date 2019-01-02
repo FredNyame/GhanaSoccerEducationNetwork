@@ -3,7 +3,7 @@
   width: 100%;
   height: 100vh;
   background: linear-gradient(top right, #000000, #353531);
-  //overflow: hidden;
+  overflow-y: hidden;
 }
 header{
   width: 100%;
@@ -12,7 +12,7 @@ header{
 header.top{
   position: absolute;
   display: flex;
-  background: #333;
+  background: transparent;
   padding: 10px 100px;
   align-items: center;
   justify-content: space-between;
@@ -37,19 +37,27 @@ header.top{
   }
 }
 #banner{
-  padding-top:15vh;
+  width: 100%;
+  margin-top:15vh;
   .container{
+    .welcome{
+      font-weight: 600;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+      color: $primary;
+      letter-spacing: 0.08em;
+    }
     h1{
       color: $primary;
       font-size: 4.7rem;
       line-height: 1.4;
-      margin-bottom: 1.3rem;
+      margin-bottom: 1.2rem;
     }
-    p{
+    .tagline{
       color: $primary;
-      font-weight: normal;
+      font-family: 'Inter', sans-serif;
       font-size: 1.13rem;
-      line-height: 1.5;
+      line-height: 1.7;
       margin-bottom: 4rem;
     }
     a{

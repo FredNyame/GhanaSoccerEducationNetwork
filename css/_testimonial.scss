@@ -1,0 +1,41 @@
+.wrapper{
+  position: relative;
+  max-width:800px;
+  width: 100%;
+  padding: 0 10px;
+  margin: 0 auto;
+  .words{
+    display: flex;
+    max-width: 611px;
+    width: 100%;
+    margin: 0 auto;
+    background: $primary;
+    margin-bottom: 10px;
+    .words-img{
+      flex: 1;
+      height: 280px;
+      background: #333;
+    }
+    .words-p{
+      flex: 2;
+      .word{
+        color: $pColor;
+        font-size: 16px;
+      }
+      .person{
+        color: $Head;
+        font-size: 14px;
+        font-weight: 600;
+      }
+    }
+  }
+  .prev,.next{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+  }
+  .next{
+    right: 0;
+  }
+}

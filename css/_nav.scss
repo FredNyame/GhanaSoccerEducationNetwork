@@ -7,32 +7,55 @@
 }
 header{
   width: 100%;
-  height: 5rem;
 }
 header.top{
   position: absolute;
-  display: flex;
   background: transparent;
-  padding: 10px 100px;
-  align-items: center;
-  justify-content: space-between;
   z-index: 10;
-  a#logo{
-    color: $primary;
-  }
-  .nav_ul{
+  .header-container{
     display: flex;
-    .nav_li{
-      padding: 0 20px;
-      a{
-        font-size: 0.83rem;
-        color: $primary;
-        font-weight: 600;
-        letter-spacing: 0.08em;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 40px 0px;
+    align-items: center;
+    justify-content: space-between;
+    a#logo{
+      color: $primary;
+    }
+    .main_nav{
+      display: flex;
+      .nav_ul{
+        display: flex;
+        .nav_li{
+          padding: 0 20px;
+          a{
+            font-size: 0.83rem;
+            color: $primary;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+          }
+        }
+        .nav_li:last-child{
+          padding: 0 0 0 20px
+        }
       }
     }
-    .nav_li:last-child{
-      padding: 0 0 0 20px
+    .mobile-container{
+      display: none;
+      position: relative;
+      //padding: 2px;
+      cursor: pointer;
+      border: 0;
+      outline: 0;
+      user-select: none;
+      z-index: 5000;
+      .menu{
+        width: 40px;
+        height: 2px;
+        background: $primary;
+        margin-bottom: 8px;
+      }
     }
   }
 }
@@ -41,29 +64,28 @@ header.top{
   margin-top:15vh;
   .container{
     .welcome{
-      font-weight: 600;
+      font-weight: 500;
       line-height: 1.5;
-      margin-bottom: 1rem;
+      margin-bottom: 0.5rem;
       color: $primary;
       letter-spacing: 0.08em;
     }
     h1{
       color: $primary;
-      font-size: 4.7rem;
+      font-size: 4.4rem;
       line-height: 1.4;
       margin-bottom: 1.2rem;
+      text-shadow: 0 0.5px 2px rgba(0,0,0,.2);
     }
     .tagline{
       color: $primary;
-      font-family: 'Inter', sans-serif;
+      font-weight: 300;
       font-size: 1.13rem;
       line-height: 1.7;
-      margin-bottom: 4rem;
+      margin-bottom: 2rem;
     }
     a{
       color: $primary;
-      font-weight: 600;
-      font-size: 1.13rem;
     }
   }
 

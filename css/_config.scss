@@ -15,6 +15,7 @@ $btnprimary: #F01D1D;
 $Head: #120404;
 $subHead: #353531;
 $pColor: #575757;
+$footerColor: #0E1015;
 
 *{
   margin: 0;
@@ -23,9 +24,11 @@ $pColor: #575757;
   list-style: none;
   box-sizing: border-box;
 }
+
 html,body { 
   font-family: 'Inter UI', sans-serif; 
   line-height: 1.6;
+  font-size: 16px;
 }
 .row{
   width: 100%;
@@ -41,12 +44,18 @@ html,body {
   width: 100%;
   background: #fbfbfb;
 }
-.top_heading{
-  margin-bottom: 3.75rem;
+.top_heading, .sub_heading{
   color: $Head;
   text-align: center;
-  font-size: 2.65rem;
   line-height: 1.4;
+}
+.top_heading{
+  font-size: 2.65rem;
+  margin-bottom: 3.75rem;
+}
+.sub_heading{
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
 }
 .col-row{
   width: 100%;
@@ -68,3 +77,28 @@ html,body {
   }
 }
 
+/* Mobile Breakpoints */
+//Landscape
+@mixin mediaLG {
+  @media screen and (max-width: 1025px){
+    @content;
+  }
+}
+//Tablet
+@mixin mediaMd {
+  @media screen and (max-width: 769px){
+    @content;
+  }
+}
+//iphone smartphones
+@mixin mediaSm {
+  @media screen and (max-width: 460px){
+    @content;
+  }
+}
+//Samll smartphones
+@mixin mediaSx {
+  @media screen and (max-width: 376px){
+    @content;
+  }
+}

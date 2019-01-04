@@ -1,12 +1,14 @@
 @include mediaLG{
 header.top{
   .header-container{
+    max-width: 1000px;
+    padding: 30px 10px;
     .main_nav{
       display: flex;
-      width: 320px;
+      width: 0px;
       flex-direction: column;
-      position: absolute;
-      right: 0;
+      position: fixed;
+      right: 0px;
       top: 0;
       bottom: 0;
       padding: 4.5rem 0;
@@ -29,11 +31,102 @@ header.top{
     }
   }
 }
+.container{
+  max-width: 1000px;
+}
+#banner{
+  .container{
+    h1{
+      font-size: 4rem;
+    }
+  }
+}
 }
 @include mediaMd{
-
+.wrapper{
+  width: 100%;
+}
+footer{
+  h2.top_heading{
+    font-size: 30px;
+    letter-spacing: $font30px;
+  }
+  .container{
+    .main-footer{
+      flex-direction: column;
+      align-items: center;
+      .logo{
+        width: 100%;
+        text-align: center;
+      }
+      .subform{
+        width: 80%
+      }
+      .quick-links{
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+        #p-quick-link-header{
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
 }
 @include mediaSm{
+/* header.top{
+  .header-container{
+    .main_nav{
+      //width:240px;
+    }
+  }
+} */
+#banner{
+  margin-top: 18vh;
+  .container{
+    h1{
+      font-size: 41px;
+      line-height: 1.6;
+      margin-bottom: 1rem;
+    }
+    .welcome{
+      font-size: 14px;
+      letter-spacing: 0em;
+      margin-bottom: 1.5rem;
+    }
+    .tagline{
+      font-size: 1rem;
+      letter-spacing: $font16px;
+    }
+  }
+}
+.top_heading{
+  font-size: 34px;
+  letter-spacing: $font30px;
+}
+.col-row{
+  .col-p{
+    font-size: 1rem;
+    letter-spacing: $font16px;
+  }
+}
+.mission_p{
+  font-size: 18px;
+  letter-spacing: $font18px;
+}
+.sub_heading{
+  font-size: 30px;
+  letter-spacing: $font30px;
+}
+.wrapper{
+  width: 100%;
+  .slide-wrap{
+    .words{
+      flex-direction: column;
+    }
+  }
+}
 
 }
 @include mediaSx{

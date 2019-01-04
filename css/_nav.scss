@@ -51,10 +51,10 @@ header.top{
       user-select: none;
       z-index: 5000;
       .menu{
-        width: 40px;
+        width: 30px;
         height: 2px;
         background: $primary;
-        margin-bottom: 8px;
+        margin-bottom: 6px;
       }
     }
   }
@@ -72,10 +72,11 @@ header.top{
     }
     h1{
       color: $primary;
-      font-size: 4.4rem;
+      font-size: 4.6rem;
       line-height: 1.4;
       margin-bottom: 1.2rem;
       text-shadow: 0 0.5px 2px rgba(0,0,0,.2);
+      letter-spacing: -0.017em;
     }
     .tagline{
       color: $primary;
@@ -83,6 +84,7 @@ header.top{
       font-size: 1.13rem;
       line-height: 1.7;
       margin-bottom: 2rem;
+      letter-spacing: $font18px;
     }
     a{
       color: $primary;

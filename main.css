@@ -24,6 +24,8 @@ html, body {
   font-family: 'Inter UI', sans-serif;
   line-height: 1.6;
   font-size: 16px;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .row {
@@ -52,11 +54,13 @@ html, body {
 .top_heading {
   font-size: 2.65rem;
   margin-bottom: 3.75rem;
+  letter-spacing: -0.017em;
 }
 
 .sub_heading {
   font-size: 2.2rem;
   margin-bottom: 1rem;
+  letter-spacing: -0.011em;
 }
 
 .col-row {
@@ -82,6 +86,7 @@ html, body {
 .col-row .col-p {
   color: #575757;
   font-size: 18px;
+  letter-spacing: -0.008em;
 }
 
 /* Mobile Breakpoints */
@@ -188,10 +193,10 @@ header.top .header-container .mobile-container {
 }
 
 header.top .header-container .mobile-container .menu {
-  width: 40px;
+  width: 30px;
   height: 2px;
   background: #fff;
-  margin-bottom: 8px;
+  margin-bottom: 6px;
 }
 
 #banner {
@@ -209,10 +214,11 @@ header.top .header-container .mobile-container .menu {
 
 #banner .container h1 {
   color: #fff;
-  font-size: 4.4rem;
+  font-size: 4.6rem;
   line-height: 1.4;
   margin-bottom: 1.2rem;
   text-shadow: 0 0.5px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: -0.017em;
 }
 
 #banner .container .tagline {
@@ -221,6 +227,7 @@ header.top .header-container .mobile-container .menu {
   font-size: 1.13rem;
   line-height: 1.7;
   margin-bottom: 2rem;
+  letter-spacing: -0.008em;
 }
 
 #banner .container a {
@@ -235,12 +242,10 @@ header.top .header-container .mobile-container .menu {
   font-size: 20px;
   margin-bottom: 20px;
   color: #575757;
+  letter-spacing: -0.011em;
 }
 
 .wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   width: 60%;
   padding: 0 10px;
@@ -262,7 +267,7 @@ header.top .header-container .mobile-container .menu {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  height: 280px;
+  min-height: 240px;
   background: #333;
 }
 
@@ -270,11 +275,13 @@ header.top .header-container .mobile-container .menu {
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
+  padding: 2rem;
 }
 
 .wrapper .slide-wrap .words .words-p .word {
   color: #575757;
   font-size: 16px;
+  letter-spacing: -0.005em;
 }
 
 .wrapper .slide-wrap .words .words-p .person {
@@ -403,17 +410,21 @@ footer .container .copyright {
 }
 
 @media screen and (max-width: 1025px) {
+  header.top .header-container {
+    max-width: 1000px;
+    padding: 30px 10px;
+  }
   header.top .header-container .main_nav {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 320px;
+    width: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: 0px;
     top: 0;
     bottom: 0;
     padding: 4.5rem 0;
@@ -433,6 +444,98 @@ footer .container .copyright {
   }
   header.top .header-container .mobile-container {
     display: block;
+  }
+  .container {
+    max-width: 1000px;
+  }
+  #banner .container h1 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .wrapper {
+    width: 100%;
+  }
+  footer h2.top_heading {
+    font-size: 30px;
+    letter-spacing: -0.016em;
+  }
+  footer .container .main-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  footer .container .main-footer .logo {
+    width: 100%;
+    text-align: center;
+  }
+  footer .container .main-footer .subform {
+    width: 80%;
+  }
+  footer .container .main-footer .quick-links {
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  footer .container .main-footer .quick-links #p-quick-link-header {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  /* header.top{
+  .header-container{
+    .main_nav{
+      //width:240px;
+    }
+  }
+} */
+  #banner {
+    margin-top: 18vh;
+  }
+  #banner .container h1 {
+    font-size: 41px;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+  }
+  #banner .container .welcome {
+    font-size: 14px;
+    letter-spacing: 0em;
+    margin-bottom: 1.5rem;
+  }
+  #banner .container .tagline {
+    font-size: 1rem;
+    letter-spacing: -0.005em;
+  }
+  .top_heading {
+    font-size: 34px;
+    letter-spacing: -0.016em;
+  }
+  .col-row .col-p {
+    font-size: 1rem;
+    letter-spacing: -0.005em;
+  }
+  .mission_p {
+    font-size: 18px;
+    letter-spacing: -0.008em;
+  }
+  .sub_heading {
+    font-size: 30px;
+    letter-spacing: -0.016em;
+  }
+  .wrapper {
+    width: 100%;
+  }
+  .wrapper .slide-wrap .words {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=main.css.map */

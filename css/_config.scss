@@ -37,6 +37,7 @@ html,body {
   line-height: 1.6;
   font-size: 16px;
   transition: all 0.5s ease-in-out;
+  box-sizing: border-box;
 }
 .row{
   width: 100%;
@@ -98,6 +99,16 @@ html,body {
 //Tablet
 @mixin mediaMd {
   @media screen and (max-width: 769px){
+    @content;
+  }
+}
+@mixin mediaMdS {
+  @media screen and (max-width: 669px){
+    @content;
+  }
+}
+@mixin mediaMdSS {
+  @media screen and (max-width: 500px){
     @content;
   }
 }

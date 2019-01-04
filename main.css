@@ -26,6 +26,8 @@ html, body {
   font-size: 16px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .row {
@@ -116,7 +118,7 @@ html, body {
 .showcase {
   position: relative;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   background: -webkit-gradient(linear, right top, left bottom, from(#000000), to(#353531));
   background: linear-gradient(top right, #000000, #353531);
   overflow-y: hidden;
@@ -409,6 +411,123 @@ footer .container .copyright {
   text-align: center;
 }
 
+/*Header banner Styling*/
+#about {
+  min-height: 580px;
+  text-align: center;
+}
+
+#about #banner {
+  position: absolute;
+  top: 50%;
+  margin-top: 0px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+/*Founders section Styling*/
+#founders .row-founder {
+  max-width: 1104px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#founders .row-founder .img-founder {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  background: #fff;
+}
+
+#founders .row-founder .p-founder {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+  font-size: 18px;
+  letter-spacing: -0.008em;
+  padding: 5rem 2rem 2.5rem 2rem;
+  background: #E3E2E2;
+}
+
+#founders .row-founder .p-founder h4 {
+  margin-bottom: 1rem;
+}
+
+#founders .row-founder .p-founder p {
+  color: #575757;
+}
+
+/*Frequently Asked questions Styling*/
+.faq-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 100px;
+}
+
+.faq-container .faq-bck {
+  width: 100%;
+  border-bottom: 1px solid #707070;
+  color: #575757;
+}
+
+.faq-container .faq-bck .faq-show {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  letter-spacing: -0.011em;
+  font-weight: 500;
+  padding: 1.4rem 1rem 1.4rem 0;
+  cursor: pointer;
+}
+
+.faq-container .faq-bck .faq-show:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 10px;
+}
+
+.faq-container .faq-bck .faq-words {
+  font-size: 18px;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.faq-container > .faq-bck:last-child {
+  border-bottom: 0px;
+}
+
+/*Register styling*/
+#action {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#action .sub_heading {
+  margin-bottom: 0;
+  margin-right: 30px;
+}
+
 @media screen and (max-width: 1025px) {
   header.top .header-container {
     max-width: 1000px;
@@ -453,9 +572,33 @@ footer .container .copyright {
   }
 }
 
+/* Tablet Screen Styling*/
 @media screen and (max-width: 769px) {
   .wrapper {
     width: 100%;
+  }
+  #founders .container .row-founder {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 40px auto;
+  }
+  #founders .container .row-founder .img-founder {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    height: 400px;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  #founders .container .row-founder .p-founder {
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    padding: 1.5rem 1rem;
   }
   footer h2.top_heading {
     font-size: 30px;
@@ -487,6 +630,37 @@ footer .container .copyright {
   }
 }
 
+@media screen and (max-width: 669px) {
+  .faq-container {
+    padding: 20px 20px;
+  }
+  #action {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #action .sub_heading {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .faq-container {
+    padding: 20px 10px;
+  }
+  .faq-container .faq-bck .faq-show {
+    font-size: 18px;
+    letter-spacing: -0.008em;
+  }
+  .faq-container .faq-bck .faq-words {
+    font-size: 16px;
+    letter-spacing: -0.005em;
+  }
+}
+
+/* Smartphones Screen Styling*/
 @media screen and (max-width: 460px) {
   /* header.top{
   .header-container{
@@ -495,11 +669,8 @@ footer .container .copyright {
     }
   }
 } */
-  #banner {
-    margin-top: 18vh;
-  }
   #banner .container h1 {
-    font-size: 41px;
+    font-size: 40px;
     line-height: 1.6;
     margin-bottom: 1rem;
   }
@@ -511,6 +682,9 @@ footer .container .copyright {
   #banner .container .tagline {
     font-size: 1rem;
     letter-spacing: -0.005em;
+  }
+  #about {
+    min-height: 420px;
   }
   .top_heading {
     font-size: 34px;
@@ -537,5 +711,14 @@ footer .container .copyright {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .faq-conatiner {
+    padding: 20px 10px;
+  }
+  .faq-conatiner .faq-bck .faq-show {
+    font-size: 16px;
+    letter-spacing: -0.005em;
+  }
 }
+
+/* Small Smartphones Screen Styling*/
 /*# sourceMappingURL=main.css.map */

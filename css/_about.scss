@@ -1,0 +1,87 @@
+/*Header banner Styling*/
+#about{
+  min-height: 580px;
+  text-align: center;
+  #banner{
+    position: absolute;
+    top: 50%;
+    margin-top: 0px;
+    transform: translateY(-50%);
+  }
+}
+/*Founders section Styling*/
+#founders{
+  .row-founder{
+    max-width: 1104px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    box-sizing: inherit;
+    justify-content: space-between;
+    .img-founder{
+      flex-basis: 50%;
+      background: #fff;
+    }
+    .p-founder{
+      flex-basis: 50%;
+      font-size: 18px;
+      letter-spacing: $font18px;
+      padding: 5rem 2rem 2.5rem 2rem;
+      background: #E3E2E2;
+      h4{
+        margin-bottom: 1rem;
+      }
+      p{
+        color: $pColor;
+      }
+    }
+  }
+}
+/*Frequently Asked questions Styling*/
+.faq-container{
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px 100px;
+  .faq-bck{
+    width: 100%;
+    border-bottom: 1px solid #707070;
+    color: $pColor;
+    .faq-show{
+      display: inline-flex;
+      width: 100%;
+      justify-content: space-between;
+      font-size: 20px;
+      letter-spacing: $font20px;
+      font-weight: 500;
+      padding: 1.4rem 1rem 1.4rem 0;
+      cursor: pointer;
+      &:after{
+        content: '\002B';
+        color: #777;
+        font-weight: bold;
+        float: right;
+        margin-left: 10px;
+      }
+    }
+    .faq-words{
+      font-size: 18px;
+      max-height: 0;
+      overflow: hidden;
+      //js will add a padding bottom 2.4rem
+    }
+  }
+}
+.faq-container > .faq-bck:last-child{
+  border-bottom: 0px;
+}
+/*Register styling*/
+#action{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .sub_heading{
+    margin-bottom: 0;
+    margin-right: 30px;
+  }
+}

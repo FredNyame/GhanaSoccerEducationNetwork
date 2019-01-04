@@ -42,9 +42,29 @@ header.top{
   }
 }
 }
+
+/* Tablet Screen Styling*/
 @include mediaMd{
 .wrapper{
   width: 100%;
+}
+#founders{
+  .container{
+    .row-founder{
+      flex-direction: column;
+      margin: 40px auto;
+      .img-founder{
+        flex-basis: 100%;
+        height: 400px;
+        order: 1;
+      }
+      .p-founder{
+        flex-basis: 100%;
+        order: 2;
+        padding: 1.5rem 1rem;
+      }
+    }
+  }
 }
 footer{
   h2.top_heading{
@@ -74,6 +94,36 @@ footer{
   }
 }
 }
+
+@include mediaMdS{
+  .faq-container{
+    padding: 20px 20px;
+  }
+  #action{
+    flex-direction: column;
+    .sub_heading{
+      margin-right: 0;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@include mediaMdSS{
+  .faq-container{
+    padding: 20px 10px;
+    .faq-bck{
+      .faq-show{
+        font-size: 18px;
+        letter-spacing: $font18px;
+      }
+      .faq-words{
+        font-size: 16px;
+        letter-spacing: $font16px;
+      }
+    }
+  }
+}
+/* Smartphones Screen Styling*/
 @include mediaSm{
 /* header.top{
   .header-container{
@@ -82,11 +132,15 @@ footer{
     }
   }
 } */
+.showcase{
+  //min-height: 100vh;
+  //height: 0;
+}
 #banner{
-  margin-top: 18vh;
+  //margin-top: 18vh;
   .container{
     h1{
-      font-size: 41px;
+      font-size: 40px;
       line-height: 1.6;
       margin-bottom: 1rem;
     }
@@ -100,6 +154,9 @@ footer{
       letter-spacing: $font16px;
     }
   }
+}
+#about{
+  min-height: 420px;
 }
 .top_heading{
   font-size: 34px;
@@ -127,8 +184,18 @@ footer{
     }
   }
 }
-
+.faq-conatiner{
+  padding: 20px 10px;
+  .faq-bck{
+    .faq-show{
+      font-size: 16px;
+      letter-spacing: $font16px;
+    }
+  }
 }
+}
+
+/* Small Smartphones Screen Styling*/
 @include mediaSx{
 
 }

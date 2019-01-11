@@ -31,8 +31,11 @@ $font16px: -0.005em;
   list-style: none;
   box-sizing: border-box;
 }
-
+html{
+  //scroll-behavior: smooth;
+}
 html,body { 
+  position: relative;
   font-family: 'Inter UI', sans-serif; 
   line-height: 1.6;
   font-size: 16px;
@@ -49,9 +52,25 @@ html,body {
   margin: 0 auto;
   padding: 0 10px;
 }
+.strong{
+  font-weight: 600;
+}
 .bgk_change{
   width: 100%;
   background: #fbfbfb;
+}
+#school-bck{
+  width: 100%;
+  min-height: 473px;
+  background-color: #F45B69;
+  background: url(../images/bckSchool.png);
+  background: linear-gradient(top right,rgba(244, 91, 105, 0.7), rgba(244, 91, 105, 0.7)), url(../images/bckSchool.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  .top_heading{
+    color: $primary;
+  }
 }
 .top_heading, .sub_heading{
   color: $Head;
@@ -76,10 +95,16 @@ html,body {
   .col-3{
     background: $primary;
     border-radius: 2px;
-    padding: 40px 20px 90px 20px;
+    padding: 60px 20px 50px 20px;
+    box-shadow: 0 5px 20px -8px rgba(0,0,0,.15), 0 0 1px 0 rgba(26,27,31,.05);
     .sub_heading{
       font-size: 20px;
       margin-bottom: 20px;
+      text-align: left;
+    }
+    .img-sub-svg{
+      width: 80px;
+      margin: 0 auto 30px auto;
     }
   }
   .col-p{

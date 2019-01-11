@@ -1,11 +1,14 @@
 @include mediaLG{
+  #about, #contact, #appliacation{
+    //text-align: left;
+  }
 header.top{
   .header-container{
     max-width: 1000px;
-    padding: 30px 10px;
+    padding: 10px 10px 0px 10px;
     .main_nav{
       display: flex;
-      width: 0px;
+      width: 320px;
       flex-direction: column;
       position: fixed;
       right: 0px;
@@ -14,17 +17,34 @@ header.top{
       padding: 4.5rem 0;
       height: 100vh;
       background: #333;
+      transform: translate3d(320px, 0, 0);
       z-index: 4000;
       .nav_ul{
         display: block;
         .nav_li{
           padding: 24px 80px 24px 36px;
           border-top: 1px solid #3d4242;
+          transition: all 0.5s ease-in-out;
+          transform: translate3d(600px, 0, 0);
+
+          &.right-show{
+            transform: translate3d(0,0,0);
+          }
         }
         .nav_li:last-child{
           padding: 24px 80px 24px 36px;
         }
+        //For loop in Scss
+        @for $x from 1 to 6 {
+          .nav_li:nth-child(#{$x}){
+            transition-delay: $x * 0.1s;
+          }
+        }
       }
+    }
+    /*for js toggle*/
+    .right-show{
+      transform: translate3d(0px, 0, 0);
     }
     .mobile-container{
       display: block;
@@ -47,6 +67,9 @@ header.top{
 @include mediaMd{
 .wrapper{
   width: 100%;
+}
+.down-arrow{
+  display: none;
 }
 #founders{
   .container{
@@ -75,17 +98,19 @@ footer{
     .main-footer{
       flex-direction: column;
       align-items: center;
+      margin-bottom: 4rem;
       .logo{
-        width: 100%;
+        width: 30%;
         text-align: center;
+        margin: 0 auto 4rem auto; 
       }
       .subform{
-        width: 80%
+        width: 90%;
+        margin-bottom: 4rem;
       }
       .quick-links{
         width: 100%;
         text-align: center;
-        margin-top: 2rem;
         #p-quick-link-header{
           margin-bottom: 1rem;
         }
@@ -109,6 +134,20 @@ footer{
 }
 
 @include mediaMdSS{
+  #app-form{
+    padding-bottom: 10px;
+  }
+  #appliacation #banner h1{
+    font-size: 2.1rem;
+  }
+  footer .container .social{
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  }
+  .main-footer{
+    .logo{
+      width: 50% !important; 
+    }
+  }
   .faq-container{
     padding: 20px 10px;
     .faq-bck{
@@ -122,6 +161,18 @@ footer{
       }
     }
   }
+
+.form-wrapper {
+  padding: 90px 10px 0 10px;
+}
+.quick-contact{
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+   .quick-info{
+    margin-bottom: 30px;
+  }
+}
 }
 /* Smartphones Screen Styling*/
 @include mediaSm{
@@ -161,6 +212,7 @@ footer{
 .top_heading{
   font-size: 34px;
   letter-spacing: $font30px;
+  padding: 0 10px;
 }
 .col-row{
   .col-p{

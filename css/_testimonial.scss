@@ -1,45 +1,112 @@
-.wrapper{
+/*Section for the testimonial*/
+#test-row{
   position: relative;
-  width: 60%;
-  padding: 0 10px;
+  z-index: 1;
+  /*Svg background for the testimonial sction*/
+  .bck-test{
+    width: 300px;
+    position: absolute;
+    left: -53px;
+    top: -80px;
+    z-index: -1;
+  }
+}
+
+/*Testimonials styling for the pictures and words*/
+.wrapper{
+  //overflow: hidden;
+  //display: flex;
+  //flex-flow: row nowrap;
+  position: relative;
+  max-width: 611px;
+  height: 280px;
+  overflow: hidden;
+  //width: 100%;
+  //height: 280px;
+  //align-items: flex-end;
   margin: 0 auto;
+  //border: 2px solid red;
+  //transition: transform 0.5s ease-in-out;
   .slide-wrap{
-   
-    .words{
-      display: flex;
-      max-width: 611px;
-      width: 100%;
-      margin: 0 auto;
-      background: $primary;
-      margin-bottom: 10px;
-      .words-img{
-        flex: 1;
-        min-height: 240px;
-        background: #333;
+   //position: absolute;
+   //top: 0;
+   display: flex;
+   flex-flow: row nowrap;
+   width: 500%;
+   height: 100%;
+   //z-index: -1;
+   transform: translateX(0);
+   transition: transform 0.5s ease-in-out;
+   .words{
+    display: flex;
+    max-width: 609px;
+    width: 100%;
+    height: 100%;
+    background: $primary;
+    transition: transform 0.5s ease-in-out;
+    .words-img{
+      flex-basis: 30%;
+      background: #333;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+    .words-p{
+      flex-basis: 70%;
+      padding: 2rem;
+      .word{
+        color: $pColor;
+        font-size: 16px;
+        letter-spacing: $font16px;
       }
-      .words-p{
-        flex: 2;
-        padding: 2rem;
-        .word{
-          color: $pColor;
-          font-size: 16px;
-          letter-spacing: $font16px;
-        }
-        .person{
-          color: $Head;
-          font-size: 14px;
-          font-weight: 600;
-        }
+      .person{
+        color: $Head;
+        font-size: 14px;
+        font-weight: 600;
       }
     }
   }
+  }
   .prev,.next{
     position: absolute;
+    width: 50px;
+    height: 50px;
+    text-align: center;
     top: 50%;
     transform: translateY(-50%);
     font-size: 2rem;
+    cursor: pointer;
+    z-index: 10;
+    background: #000;
+    color: #fff;
+    padding: 0 1rem;
+    border-radius: 50%;
+    opacity: 0.7;
+    transition: opacity 0.5s ease-in-out;
+    z-index: 1000;
   }
+ /*  .prev{
+    left: -2rem;
+  } */
   .next{
-    right: 0;
+    right: 0rem;
   }
+  .prev:hover, .next:hover{
+    opacity: 1;
+  }
+}
+#img01{
+ background: url("https://images.unsplash.com/photo-1546945586-a086b36a264f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80");
+}
+#img02{
+  background: url("https://images.unsplash.com/photo-1546942113-a6c43b63104a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+}
+#img03{
+  background: url("https://images.unsplash.com/photo-1546962390-a1e498bd3e58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+}
+#img04{
+  background: url("https://images.unsplash.com/photo-1546968350-3b364d5ad668?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1078&q=80");
+}
+#img05{
+  background: url("https://images.unsplash.com/photo-1546920930-cfbd84a17b4c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1134&q=80");
 }

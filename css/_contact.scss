@@ -1,0 +1,122 @@
+.contact-wrapper{
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+}
+#section-contact{
+  padding-bottom: 30px;
+}
+#contact-form-bck{
+  position: relative;
+  padding-top: 50px;
+  .contact-bck{
+    position: absolute;
+    width: 800px;
+    top: -134px;
+    left: -132px;
+    height: 800px;
+    z-index: -1;
+    svg{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+#require{
+  color: #000;
+}
+.strong{
+  color: #F01D1D;
+  cursor: pointer;
+}
+#quick-note{
+  .mission_p{
+    max-width: 800px;
+    text-align: left;
+  }
+}
+.form-wrapper{
+  padding: 90px 50px 0 50px;
+  background: #fff;
+  border-radius: 2px;
+  .field{
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+    background: #fff;
+    label{
+      font-size: 14px;
+      opacity: 0;
+      position: absolute;
+      background: #fff;
+      left: 20px;
+      top:-10px;
+      z-index: 1;
+      transform: rotateX(180deg);
+      //transition: transform 0.5s ease-in-out;
+    }
+  }
+  input[type="text"], input[type="email"],  input[type="number"], textarea{
+    width: 100%;
+    border: 0px;
+    padding: 1rem 0;
+    font-size: 18px;
+    border-bottom: 1px solid #7c7878;
+    transition: border 0.5s ease-in-out;
+    &:focus{
+      border: 2px solid #4D90FE;
+      border-radius: 3px;
+      padding: 1rem 10px;
+      box-shadow: 0px 0px 4px 0px #4D90FE;
+      outline: none;
+    }
+    &:focus::placeholder{
+      opacity: 0;
+    }
+    &:focus + label{
+       opacity: 1;
+       animation: moveUp 0.5s forwards;
+      //border: 1px solid red;
+    }
+   /*  &:active + label{
+      display: block;
+    } */
+  }
+  input[type="submit"]{
+    //width: 20%;
+    border: 0;
+    cursor: pointer;
+  }
+}
+/*Quick infor Contact*/
+.quick-contact{
+  display: flex;
+  justify-content: space-between;
+  .quick-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    flex: 1;
+  }
+  #quick-email{
+    background: url(../images/emailbck.svg);
+  }
+  #quick-telephone{
+    background: url(../images/phone.svg);
+  }
+  #quick-register{
+    background: url(../images/users.svg);
+  }
+  #quick-email, #quick-telephone, #quick-register{
+    width: 150px;
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+.app-info{
+  text-align: center;
+}

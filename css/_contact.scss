@@ -101,13 +101,13 @@
     flex: 1;
   }
   #quick-email{
-    background: url(../images/emailbck.svg);
+    background: url("../images/emailbck.svg");
   }
   #quick-telephone{
-    background: url(../images/phone.svg);
+    background: url("../images/phone.svg");
   }
   #quick-register{
-    background: url(../images/users.svg);
+    background: url("../images/users.svg");
   }
   #quick-email, #quick-telephone, #quick-register{
     width: 150px;

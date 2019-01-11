@@ -56,9 +56,9 @@ html, body {
   width: 100%;
   min-height: 473px;
   background-color: #F45B69;
-  background: url(../images/bckSchool.png);
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(244, 91, 105, 0.7)), to(rgba(244, 91, 105, 0.7))), url(../images/bckSchool.png);
-  background: linear-gradient(top right, rgba(244, 91, 105, 0.7), rgba(244, 91, 105, 0.7)), url(../images/bckSchool.png);
+  background: url("../images/bckSchool.png");
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(244, 91, 105, 0.7)), to(rgba(244, 91, 105, 0.7))), url("../images/bckSchool.png");
+  background: linear-gradient(top right, rgba(244, 91, 105, 0.7), rgba(244, 91, 105, 0.7)), url("../images/bckSchool.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -1125,7 +1125,7 @@ footer .container .copyright {
     top: 0;
     bottom: 0;
     padding: 4.5rem 0;
-    height: 100vh;
+    min-height: 100%;
     background: #333;
     -webkit-transform: translate3d(320px, 0, 0);
             transform: translate3d(320px, 0, 0);
@@ -1186,6 +1186,10 @@ footer .container .copyright {
 
 /* Tablet Screen Styling*/
 @media screen and (max-width: 769px) {
+  #contact-form-bck .contact-bck {
+    width: 100%;
+    top: -259px;
+  }
   .wrapper {
     width: 100%;
   }
@@ -1267,12 +1271,15 @@ footer .container .copyright {
   #app-form {
     padding-bottom: 10px;
   }
+  #appliacation #banner {
+    margin-top: 20px;
+  }
   #appliacation #banner h1 {
-    font-size: 2.1rem;
+    font-size: 2.3rem;
   }
   footer .container .social {
-    -ms-grid-columns: (minmax(50px, 1fr))[auto-fit];
-        grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    -ms-grid-columns: (minmax(40px, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
   }
   .main-footer .logo {
     width: 50% !important;
@@ -1289,7 +1296,7 @@ footer .container .copyright {
     letter-spacing: -0.005em;
   }
   .form-wrapper {
-    padding: 90px 10px 0 10px;
+    padding: 50px 10px 0 10px;
   }
   .quick-contact {
     -webkit-box-orient: vertical;
@@ -1315,10 +1322,16 @@ footer .container .copyright {
     }
   }
 } */
+  /*Header banner Styling*/
+  #about #banner, #contact #banner, #appliacation #banner {
+    top: 55%;
+    -webkit-transform: translateY(-55%);
+            transform: translateY(-55%);
+  }
   #banner .container h1 {
-    font-size: 40px;
+    font-size: 50px;
     line-height: 1.6;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
   }
   #banner .container .welcome {
     font-size: 14px;
@@ -1326,10 +1339,11 @@ footer .container .copyright {
     margin-bottom: 1.5rem;
   }
   #banner .container .tagline {
-    font-size: 1rem;
-    letter-spacing: -0.005em;
+    font-size: 18px;
+    letter-spacing: -0.008em;
+    margin-bottom: 0;
   }
-  #about {
+  #about, #contact {
     min-height: 420px;
   }
   .top_heading {

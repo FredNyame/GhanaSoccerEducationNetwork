@@ -15,7 +15,8 @@ header.top{
       top: 0;
       bottom: 0;
       padding: 4.5rem 0;
-      height: 100vh;
+      //height: 100vh;
+      min-height: 100%;
       background: #333;
       transform: translate3d(320px, 0, 0);
       z-index: 4000;
@@ -65,6 +66,10 @@ header.top{
 
 /* Tablet Screen Styling*/
 @include mediaMd{
+  #contact-form-bck .contact-bck{
+    width: 100%;
+    top: -259px;
+  }
 .wrapper{
   width: 100%;
 }
@@ -137,11 +142,17 @@ footer{
   #app-form{
     padding-bottom: 10px;
   }
-  #appliacation #banner h1{
-    font-size: 2.1rem;
+  #appliacation{
+    #banner{
+      margin-top: 20px;
+      h1{
+        font-size: 2.3rem;
+      }
+    }
   }
+
   footer .container .social{
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
   }
   .main-footer{
     .logo{
@@ -163,7 +174,7 @@ footer{
   }
 
 .form-wrapper {
-  padding: 90px 10px 0 10px;
+  padding: 50px 10px 0 10px;
 }
 .quick-contact{
   flex-direction: column;
@@ -187,13 +198,20 @@ footer{
   //min-height: 100vh;
   //height: 0;
 }
+/*Header banner Styling*/
+#about, #contact, #appliacation{
+  #banner{
+    top: 55%;
+    transform: translateY(-55%);
+  }
+}
 #banner{
   //margin-top: 18vh;
   .container{
     h1{
-      font-size: 40px;
+      font-size: 50px;
       line-height: 1.6;
-      margin-bottom: 1rem;
+      margin-bottom: 0;
     }
     .welcome{
       font-size: 14px;
@@ -201,12 +219,13 @@ footer{
       margin-bottom: 1.5rem;
     }
     .tagline{
-      font-size: 1rem;
-      letter-spacing: $font16px;
+      font-size: 18px;
+      letter-spacing: $font18px;
+      margin-bottom: 0;
     }
   }
 }
-#about{
+#about, #contact{
   min-height: 420px;
 }
 .top_heading{

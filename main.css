@@ -56,9 +56,9 @@ html, body {
   width: 100%;
   min-height: 473px;
   background-color: #F45B69;
-  background: url("https://frednyame.github.io/images/bckSchool.png");
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(244, 91, 105, 0.7)), to(rgba(244, 91, 105, 0.7))), url("https://frednyame.github.io/images/bckSchool.png");
-  background: linear-gradient(top right, rgba(244, 91, 105, 0.7), rgba(244, 91, 105, 0.7)), url("https://frednyame.github.io/images/bckSchool.png");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bckSchool.png");
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(244, 91, 105, 0.7)), to(rgba(244, 91, 105, 0.7))), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bckSchool.png");
+  background: linear-gradient(top right, rgba(244, 91, 105, 0.7), rgba(244, 91, 105, 0.7)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bckSchool.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -260,23 +260,23 @@ html, body {
 }
 
 #home {
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("https://frednyame.github.io/images/banner.png");
-  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("https://frednyame.github.io/images/banner.png");
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/banner.png");
+  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/banner.png");
 }
 
 #about {
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("https://frednyame.github.io/images/behind.png");
-  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("https://frednyame.github.io/images/behind.png");
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/behind.png");
+  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/behind.png");
 }
 
 #contact {
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("https://frednyame.github.io/images/contactBanner.png");
-  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("https://frednyame.github.io/images/contactBanner.png");
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/contactBanner.png");
+  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/contactBanner.png");
 }
 
 #appliacation {
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("https://frednyame.github.io/images/appBanner.png");
-  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("https://frednyame.github.io/images/appBanner.png");
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/appBanner.png");
+  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/appBanner.png");
 }
 
 header {
@@ -1082,15 +1082,15 @@ footer .container .copyright {
 }
 
 .quick-contact #quick-email {
-  background: url("https://frednyame.github.io/images/emailbck.svg");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/emailbck.svg");
 }
 
 .quick-contact #quick-telephone {
-  background: url("https://frednyame.github.io/images/phone.svg");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/phone.svg");
 }
 
 .quick-contact #quick-register {
-  background: url("https://frednyame.github.io/images/users.svg");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/users.svg");
 }
 
 .quick-contact #quick-email, .quick-contact #quick-telephone, .quick-contact #quick-register {

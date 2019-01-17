@@ -74,9 +74,9 @@ img {
   width: 100%;
   min-height: 473px;
   background-color: #F45B69;
-  background: url("../images/bcgSchool.svg");
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(249, 249, 249, 0.9)), to(rgba(249, 249, 249, 0.9))), url("../images/bcgSchool.svg");
-  background: linear-gradient(top right, rgba(249, 249, 249, 0.9), rgba(249, 249, 249, 0.9)), url("../images/bcgSchool.svg");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bcgSchool.svg");
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(249, 249, 249, 0.9)), to(rgba(249, 249, 249, 0.9))), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bcgSchool.svg");
+  background: linear-gradient(top right, rgba(249, 249, 249, 0.9), rgba(249, 249, 249, 0.9)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bcgSchool.svg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -331,8 +331,8 @@ img {
 }
 
 #resource {
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("../images/resourceBck.png");
-  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("../images/resourceBck.png");
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/resourceBck.png");
+  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/resourceBck.png");
 }
 
 header {
@@ -1272,23 +1272,23 @@ footer .container .copyright {
 }
 
 .quick-contact #quick-head {
-  background: url("../images/us.svg");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/us.svg");
 }
 
 .quick-contact #quick-gh {
-  background: url("../images/gh.svg");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/gh.svg");
 }
 
 .quick-contact #quick-email {
-  background: url("../images/emailbck.svg");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/emailbck.svg");
 }
 
 .quick-contact #quick-telephone {
-  background: url("../images/phone.svg");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/phone.svg");
 }
 
 .quick-contact #quick-register {
-  background: url("../images/users.svg");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/users.svg");
 }
 
 .quick-contact #quick-email, .quick-contact #quick-telephone, .quick-contact #quick-register, .quick-contact #quick-gh, .quick-contact #quick-head {

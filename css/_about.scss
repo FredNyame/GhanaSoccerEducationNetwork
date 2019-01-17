@@ -13,10 +13,17 @@
     }
     .p-founder{
       flex-basis: 50%;
-      font-size: 18px;
       letter-spacing: $font18px;
-      padding: 5rem 2rem 2.5rem 2rem;
-      background: #E3E2E2;
+      padding: 4.3rem 3.2rem 5rem 3.2rem;
+      background: #f3f3f3;
+      .team-name{
+        color: #333;
+      }
+      .team-title{
+        font-size: .85rem;
+        color: #777;
+        margin-bottom: 20px;
+      }
       h4{
         margin-bottom: 1rem;
       }

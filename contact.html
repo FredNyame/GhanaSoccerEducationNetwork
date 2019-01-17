@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ghans Soccer Education Network</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
@@ -23,9 +24,25 @@
     <nav class="main_nav">
       <ul class="nav_ul">
         <li class="nav_li"><a href="index.html" class="nav-a">HOME</a></li>
+        <li class="nav_li" id="main-dropdown"><a href="#" class="nav-a">ATHLETES</a>
+          <ul id="dropdown-menu">
+            <li class="dropdown-li"><a href="index.html" class="dropdown-a">SCHOLARSHIP RECIPIENTS
+                <span class="dropdown-tagline">See our student-athletes who are covered</span>
+              </a>
+            </li>
+            <li class="dropdown-li"><a href="index.html"  class="dropdown-a">TESTIMONIALS
+              <span class="dropdown-tagline">What our recruits say about us</span>
+              </a>
+            </li>
+            <li class="dropdown-li"><a href="index.html"  class="dropdown-a">FAQ
+              <span class="dropdown-tagline">Your recruiting questions, answered</span>
+              </a>
+            </li>
+          </ul>
+        </li>
         <li class="nav_li"><a href="about.html" class="nav-a">ABOUT</a></li>
-        <li class="nav_li"><a href="#" class="nav-a">RESOURCE</a></li>
         <li class="nav_li"><a href="#" class="nav-a">EVENTS</a></li>
+        <li class="nav_li"><a href="resource.html" class="nav-a">RESOURCE</a></li>
         <li class="nav_li"><a href="contact.html" class="nav-a">CONTACT</a></li>
         <li class="nav_li"><a href="appliacation.html" class="btn btn-primary">APPLY</a></li>
       </ul>
@@ -56,24 +73,29 @@
   <!--Contact Form-->
 <section class="row" id="contact-form-bck">
   <div class="contact-bck">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830.854 834.509"><defs><style>.a{fill:#f45b69;opacity:0.3;}</style></defs><path class="a" d="M601.479,554.77c0,31.7-25.246,57.39-56.389,57.39H56.389C25.246,612.16,0,586.466,0,554.77V239.991a57.766,57.766,0,0,1,21.6-45.166c29.267-23.35,53.453-42.284,192.9-145.282C234.262,34.876,273.482-.415,300.74,0c27.252-.423,66.487,34.879,86.243,49.538C526.412,152.53,550.631,171.49,579.879,194.825a57.766,57.766,0,0,1,21.6,45.166ZM524.337,319.7a9.288,9.288,0,0,0-13.321-2.28c-26.837,20.174-65.155,48.668-124.034,92.158C367.217,424.248,328,459.536,300.74,459.117c-27.267.411-66.443-34.844-86.243-49.535C155.625,366.1,117.3,337.6,90.463,317.424a9.288,9.288,0,0,0-13.321,2.28L66.485,335.482a9.674,9.674,0,0,0,2.16,13.112c26.887,20.2,65.145,48.65,123.706,91.905,23.817,17.673,66.4,57.166,108.388,56.88,41.967.289,84.537-39.182,108.387-56.88,58.562-43.257,96.822-71.7,123.706-91.905a9.674,9.674,0,0,0,2.16-13.112Z" transform="translate(0 309.785) rotate(-31)"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 830.854 834.509"><defs><style>.a{fill:#f9f9f9;}</style></defs><path class="a" d="M601.479,554.77c0,31.7-25.246,57.39-56.389,57.39H56.389C25.246,612.16,0,586.466,0,554.77V239.991a57.766,57.766,0,0,1,21.6-45.166c29.267-23.35,53.453-42.284,192.9-145.282C234.262,34.876,273.482-.415,300.74,0c27.252-.423,66.487,34.879,86.243,49.538C526.412,152.53,550.631,171.49,579.879,194.825a57.766,57.766,0,0,1,21.6,45.166ZM524.337,319.7a9.288,9.288,0,0,0-13.321-2.28c-26.837,20.174-65.155,48.668-124.034,92.158C367.217,424.248,328,459.536,300.74,459.117c-27.267.411-66.443-34.844-86.243-49.535C155.625,366.1,117.3,337.6,90.463,317.424a9.288,9.288,0,0,0-13.321,2.28L66.485,335.482a9.674,9.674,0,0,0,2.16,13.112c26.887,20.2,65.145,48.65,123.706,91.905,23.817,17.673,66.4,57.166,108.388,56.88,41.967.289,84.537-39.182,108.387-56.88,58.562-43.257,96.822-71.7,123.706-91.905a9.674,9.674,0,0,0,2.16-13.112Z" transform="translate(0 309.785) rotate(-31)"/></svg>
   </div>
   <div class="container">
-    <form action="" method="post" class="form-wrapper contact-wrapper">
+    <form action="" method="post" class="form-wrapper contact-wrapper" id="contact-form">
+      <div class="field" id="first-form-wrap">
+        <label for="Person" id="person">I am </label>
+        <input type="radio" name="Person" value="Student"><span class="input-radio">a student</span>
+        <input type="radio" name="Person" value="College Coach"><span class="input-radio">College Coach</span>
+      </div>
       <div class="field">
-        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" minlength="4" required>
         <label>First Name</label>
       </div>
       <div class="field">
-        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" minlength="4" required>
         <label>Last Name</label>
       </div>
       <div class="field">
-        <input type="email" name="email" id="email" placeholder="Email Address">
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
         <label>Email Address</label>
       </div>
       <div class="field">
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message" minlength="6" required></textarea>
         <label>Message</label>
       </div>
       <button type="submit" class="btn btn-primary">Send Message</button>
@@ -81,19 +103,27 @@
   </div>
 </section> 
   <!--Quick Contact Info-->
-<section class="row">
+<section class="row" id="quick-row">
   <div class="container">
-    <div class="quick-contact contact-wrapper">
+    <div class="quick-contact">
+      <div class="quick-info" id="quick-head">
+        <h4>Head Office</h4>
+        <p>611 Myrtle Street<br>Shelton, CT, 06484<br>USA</p>
+      </div>
+      <div class="quick-info" id="quick-gh">
+        <h4>Ghana Office</h4>
+        <p>P.O.BOX SE 1729<br>Kumasi, Ghana</p>
+      </div>
       <div class="quick-info" id="quick-email">
-        <p>Email</p>
+        <h4>Email</h4>
         <p>Example@gmail.com</p>
       </div>
       <div class="quick-info" id="quick-telephone">
-        <p>Telephone</p>
+        <h4>Telephone</h4>
         <p>Example@gmail.com</p>
       </div>
       <div class="quick-info" id="quick-register">
-        <p>Resgister</p>
+        <h4>Resgister</h4>
         <p>if you want to join <a href="appliacation.html" class="strong">Click here</a></p>
       </div>
     </div>
@@ -162,7 +192,7 @@
 </svg>
 </div>
 </div>
-  <script src="main.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/scroll.js"></script>
 </body>

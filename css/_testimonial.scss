@@ -18,9 +18,9 @@
   //display: flex;
   //flex-flow: row nowrap;
   position: relative;
-  max-width: 611px;
-  height: 280px;
-  overflow: hidden;
+  max-width: 1000px;
+  //height: 280px;
+  //overflow: hidden;
   //width: 100%;
   //height: 280px;
   //align-items: flex-end;
@@ -31,38 +31,72 @@
    //position: absolute;
    //top: 0;
    display: flex;
-   flex-flow: row nowrap;
-   width: 500%;
-   height: 100%;
+   flex-flow: row wrap;
+   justify-content: center;
+   //width: 500%;
+   //height: 100%;
    //z-index: -1;
-   transform: translateX(0);
-   transition: transform 0.5s ease-in-out;
+   //transform: translateX(0);
    .words{
-    display: flex;
+     display: none;
+     position: relative;
+    //display: flex;
     max-width: 609px;
     width: 100%;
-    height: 100%;
-    background: $primary;
-    transition: transform 0.5s ease-in-out;
+    height: auto;
+    min-height: 191px;
+    margin-bottom: 5rem;
+    //background: $primary;
+    
     .words-img{
-      flex-basis: 30%;
+      position: absolute;
+      //flex-basis: 30%;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      bottom: -48px;
+      left: 9px;
+      border: 3px solid white;
       background: #333;
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center center;
+      box-shadow: 0 15px 25px -8px rgba(0, 0, 0, 0.15), 0 0 1px 0 rgba(26, 27, 31, 0.05);
+     
     }
     .words-p{
-      flex-basis: 70%;
-      padding: 2rem;
+      width: 100%;
+      //flex-basis: 70%;
+      background: #fff;
+      box-shadow: 0 8px 18px -8px rgba(0, 0, 0, 0.15);
+     
       .word{
+        position: relative;
         color: $pColor;
         font-size: 16px;
+        padding: 2rem;
         letter-spacing: $font16px;
+        z-index: 1;
+        
+          &:before {
+            content: "“";
+            color: #E0DDD7;
+            font-family: georgia, serif;
+            font-size: 6em;
+            position: absolute;
+            top: -17px;
+            left: 6px;
+            z-index: -1;
+        }
       }
       .person{
+        position: absolute;
+        bottom: -9px;
+        left: 136px;
         color: $Head;
         font-size: 14px;
         font-weight: 600;
+      
       }
     }
   }
@@ -93,6 +127,12 @@
   }
   .prev:hover, .next:hover{
     opacity: 1;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
   }
 }
 #img01{

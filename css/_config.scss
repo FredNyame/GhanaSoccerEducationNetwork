@@ -31,9 +31,7 @@ $font16px: -0.005em;
   list-style: none;
   box-sizing: border-box;
 }
-html{
-  //scroll-behavior: smooth;
-}
+
 html,body { 
   position: relative;
   font-family: 'Inter UI', sans-serif; 
@@ -46,31 +44,39 @@ html,body {
   width: 100%;
   padding: 120px 0px 130px 0px;
 }
+img {
+  vertical-align: middle;
+  border-style: none;
+}
 .container{
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
 }
+
+.col-12{
+  flex: 0 0 100%;
+}
+.col-3{
+  flex: 0 0 33%;
+}
 .strong{
   font-weight: 600;
 }
 .bgk_change{
   width: 100%;
-  background: #fbfbfb;
+  background: #f9f9f9;
 }
 #school-bck{
   width: 100%;
   min-height: 473px;
   background-color: #F45B69;
-  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bckSchool.png");
-  background: linear-gradient(top right,rgba(244, 91, 105, 0.7), rgba(244, 91, 105, 0.7)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bckSchool.png");
+  background: url("../images/bcgSchool.svg");
+  background: linear-gradient(top right,rgba(249,249,249, 0.9), rgba(249, 249, 249, 0.9)), url("../images/bcgSchool.svg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  .top_heading{
-    color: $primary;
-  }
 }
 .top_heading, .sub_heading{
   color: $Head;
@@ -81,6 +87,9 @@ html,body {
   font-size: 2.65rem;
   margin-bottom: 3.75rem;
   letter-spacing: $font40px;
+}
+.text-mt2{
+  margin-bottom: 2rem;
 }
 .sub_heading{
   font-size: 2.2rem;
@@ -94,9 +103,10 @@ html,body {
   grid-template-columns: repeat(auto-fit, minmax(348px, 1fr)); 
   .col-3{
     background: $primary;
-    border-radius: 2px;
+    border-radius: 4px;
     padding: 60px 20px 50px 20px;
     box-shadow: 0 5px 20px -8px rgba(0,0,0,.15), 0 0 1px 0 rgba(26,27,31,.05);
+    margin: 0 5px;
     .sub_heading{
       font-size: 20px;
       margin-bottom: 20px;

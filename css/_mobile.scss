@@ -15,30 +15,39 @@ header.top{
       top: 0;
       bottom: 0;
       padding: 4.5rem 0;
-      //height: 100vh;
-      height: 100vh;
+      height: auto;
+      min-height: 100vh;
       background: #333;
       transform: translate3d(320px, 0, 0);
       z-index: 4000;
+      overflow-y: scroll;
       .nav_ul{
         display: block;
         .nav_li{
-          padding: 24px 80px 24px 36px;
+          padding: 20px 80px 20px 26px;
           border-top: 1px solid #3d4242;
           transition: all 0.5s ease-in-out;
           transform: translate3d(600px, 0, 0);
-
+          margin: 0;
           &.right-show{
             transform: translate3d(0,0,0);
           }
         }
         .nav_li:last-child{
-          padding: 24px 80px 24px 36px;
+          padding: 24px 80px 24px 26px;
         }
         //For loop in Scss
         @for $x from 1 to 6 {
           .nav_li:nth-child(#{$x}){
             transition-delay: $x * 0.1s;
+          }
+        }
+        #main-dropdown{
+          display: block;
+          #dropdown-menu{
+            position: relative;
+            top:0px;
+            left:-17px;
           }
         }
       }
@@ -58,7 +67,7 @@ header.top{
 #banner{
   .container{
     h1{
-      font-size: 4rem;
+      font-size: 3.7rem;
     }
   }
 }
@@ -139,6 +148,18 @@ footer{
 }
 
 @include mediaMdSS{
+  #banner{
+    margin-top: 16vh;
+    .container{
+      h1{
+        font-size: 3.5rem;
+      }
+      .tagline{
+        font-size: 1rem;
+        letter-spacing: $font16px;
+      }
+    }
+  }
   #app-form{
     padding-bottom: 10px;
   }
@@ -206,11 +227,11 @@ footer{
   }
 }
 #banner{
-  //margin-top: 18vh;
+  //margin-top: 16vh;
   .container{
     h1{
       font-size: 50px;
-      line-height: 1.6;
+      //line-height: 1.6;
       margin-bottom: 0;
     }
     .welcome{
@@ -219,9 +240,8 @@ footer{
       margin-bottom: 1.5rem;
     }
     .tagline{
-      font-size: 18px;
-      letter-spacing: $font18px;
       margin-bottom: 0;
+      //line-height: 0;
     }
   }
 }

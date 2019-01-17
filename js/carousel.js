@@ -15,7 +15,7 @@ document.querySelector("a.next").addEventListener('click', function(){
 });
 
 //Keep track of the current Index
-let sliderIndex = 0;
+let sliderIndex = 1;
 sliderFun(sliderIndex);
 
 function slideIndexFun(n){
@@ -27,20 +27,13 @@ function slideIndexFun(n){
 
 //Display and control function
 function sliderFun(numIndex){
-  //wrapper.style.transition = 'transition 0.5s ease-in-out';
-  if(numIndex > allCards.length - 1) {
-    document.querySelector("a.next").style.opacity = '0';
-    return
-  };
-  if(numIndex < 0) {
-    document.querySelector("a.prev").style.opacity = '0';
-    return
-  };
-  for(let i = 0; i < allCards.length; i++){
-    allCards[i].style.transform = 'translateX(' + (-size * numIndex) + 'px';
+  if (numIndex > allCards.length) {sliderIndex = 1}    
+  if (numIndex < 1) {sliderIndex = allCards.length}
+  for (let i = 0; i < allCards.length; i++) {
+    allCards[i].style.display = "none";  
   }
-  document.querySelector("a.prev").style.opacity = '1';
-  document.querySelector("a.next").style.opacity = '1';
+  
+  allCards[sliderIndex-1].style.display = "block";  
 }
 
 //functiion 

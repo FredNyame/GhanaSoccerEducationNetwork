@@ -9,11 +9,14 @@
   outline: 0px;
   box-shadow: 0 15px 25px -8px rgba(0,0,0,.15), 0 0 1px 0 rgba(26,27,31,.05);
   text-shadow: 0 0.5px 2px rgba(0,0,0,.2);
-  
+  cursor: pointer;
 }
 .btn-primary{
   background: $btnprimary;
   color: $primary;
+  &:hover{
+    background: darken($btnprimary, 6);
+  }
 }
 #pattern{
   text-align: center;

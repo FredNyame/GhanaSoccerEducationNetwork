@@ -2,6 +2,7 @@
   max-width: 900px;
   width: 100%;
   margin: 0 auto;
+  
 }
 #section-contact{
   padding-bottom: 30px;
@@ -55,6 +56,32 @@
       transform: rotateX(180deg);
       //transition: transform 0.5s ease-in-out;
     }
+    #person{
+      width: 100%;
+      top: -35px;
+      left: 0;
+      font-size: 20px;
+      background: transparent;
+      opacity: 1;
+      transform: rotateX(0deg);
+    }
+    input[type="radio"]{
+      margin-right:5px;
+    }
+    .input-radio{
+      margin-right: 15px;
+      font-size: 18px;
+      color: #777;
+    }
+    &:first-child{
+      margin-bottom: 30px;
+    }
+    .error{
+      border-bottom: 2px solid red;
+    }
+    .error-message{
+      color: red;
+    }
   }
   input[type="text"], input[type="email"],  input[type="number"], textarea{
     width: 100%;
@@ -62,7 +89,7 @@
     padding: 1rem 0;
     font-size: 18px;
     border-bottom: 1px solid #7c7878;
-    transition: border 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
     &:focus{
       border: 2px solid #4D90FE;
       border-radius: 3px;
@@ -89,7 +116,11 @@
   }
 }
 /*Quick infor Contact*/
+#quick-row{
+  padding-top:0px;
+}
 .quick-contact{
+  width: 100%;
   display: flex;
   justify-content: space-between;
   .quick-info{
@@ -100,16 +131,24 @@
     padding: 1rem;
     flex: 1;
   }
+ 
+  #quick-head{
+    background: url("../images/us.svg");
+  }
+  #quick-gh{
+    background: url("../images/gh.svg");
+  }
   #quick-email{
-    background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/emailbck.svg");
+    background: url("../images/emailbck.svg");
   }
   #quick-telephone{
-    background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/phone.svg");
+    background: url("../images/phone.svg");
   }
   #quick-register{
-    background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/users.svg");
+    background: url("../images/users.svg");
   }
-  #quick-email, #quick-telephone, #quick-register{
+ 
+  #quick-email, #quick-telephone, #quick-register, #quick-gh, #quick-head{
     width: 150px;
     height: 150px;
     background-size: contain;

@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Ghans Soccer Education Network</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
@@ -23,9 +24,25 @@
     <nav class="main_nav">
       <ul class="nav_ul">
         <li class="nav_li"><a href="index.html" class="nav-a">HOME</a></li>
+        <li class="nav_li" id="main-dropdown"><a href="#" class="nav-a">ATHLETES</a>
+          <ul id="dropdown-menu">
+            <li class="dropdown-li"><a href="index.html" class="dropdown-a">SCHOLARSHIP RECIPIENTS
+                <span class="dropdown-tagline">See our student-athletes who are covered</span>
+              </a>
+            </li>
+            <li class="dropdown-li"><a href="index.html"  class="dropdown-a">TESTIMONIALS
+              <span class="dropdown-tagline">What our recruits say about us</span>
+              </a>
+            </li>
+            <li class="dropdown-li"><a href="index.html"  class="dropdown-a">FAQ
+              <span class="dropdown-tagline">Your recruiting questions, answered</span>
+              </a>
+            </li>
+          </ul>
+        </li>
         <li class="nav_li"><a href="about.html" class="nav-a">ABOUT</a></li>
-        <li class="nav_li"><a href="#" class="nav-a">RESOURCE</a></li>
         <li class="nav_li"><a href="#" class="nav-a">EVENTS</a></li>
+        <li class="nav_li"><a href="resource.html" class="nav-a">RESOURCE</a></li>
         <li class="nav_li"><a href="contact.html" class="nav-a">CONTACT</a></li>
         <li class="nav_li"><a href="appliacation.html" class="btn btn-primary">APPLY</a></li>
       </ul>
@@ -49,41 +66,39 @@
 <section class="row" id="app-form">
     <h2 class="top_heading">Application Form</h2>
   <div class="container">
-    <form action="" method="post" class="form-wrapper contact-wrapper">
+    <form action="" method="post" class="form-wrapper contact-wrapper" id="application-form">
       <div class="field">
-        <input type="text" name="firstName" id="firstName" placeholder="First Name">
+        <input type="text" name="firstName" id="firstName" placeholder="First Name" minlength="4" required>
         <label>First Name</label>
       </div>
       <div class="field">
-        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+        <input type="text" name="lastName" id="lastName" placeholder="Last Name" minlength="4" required>
         <label>Last Name</label>
       </div>
       <div class="field">
-        <input type="email" name="email" id="email" placeholder="Email Address">
+        <input type="email" name="email" id="email" placeholder="Email Address" required>
         <label>Email Address</label>
       </div>
       <div class="field">
-        <input type="number" name="age" id="age" placeholder="Age">
+        <input type="number" name="age" id="age" placeholder="Age" required>
         <label>Age</label>
       </div>
       <div class="field">
-        <input type="text" name="school" id="school" placeholder="School">
+        <input type="text" name="school" id="school" placeholder="School" minlength="4" required>
         <label>School</label>
       </div>
       <div class="field">
-        <input type="text" name="location" id="location" placeholder="Location">
+        <input type="text" name="location" id="location" placeholder="Location" minlength="4" required>
         <label>Location</label>
       </div>
       <div class="field">
-        <textarea name="message" id="message" cols="30" rows="10" placeholder="Describe yourself"></textarea>
+        <textarea name="message" id="message" cols="30" rows="10" placeholder="Describe yourself" minlength="6" required></textarea>
         <label>Describe yourself</label>
       </div>
       <button type="submit" class="btn btn-primary">Apply Now</button>
     </form>
   </div>
-</section> 
   <!--Quick Contact Info-->
-<section class="row">
   <div class="container">
     <div class="quick-contact contact-wrapper">
       <div class="app-info quick-info">
@@ -155,7 +170,7 @@
 </svg>
 </div>
 </div>
-  <script src="main.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/nav.js"></script>
   <script src="js/scroll.js"></script>
 </body>

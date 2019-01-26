@@ -9,18 +9,23 @@
     justify-content: space-between;
     .img-founder{
       flex-basis: 50%;
+      height: 500px;
       background: #fff;
+      background: url('../images/athlete1.png');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
     }
     .p-founder{
       flex-basis: 50%;
       letter-spacing: $font18px;
-      padding: 4.3rem 3.2rem 5rem 3.2rem;
-      background: #f3f3f3;
+      padding: 5.3rem 3.2rem 5rem 3.2rem;
       .team-name{
+        font-size: 24px;
         color: #333;
       }
       .team-title{
-        font-size: .85rem;
+        font-size: .9rem;
         color: #777;
         margin-bottom: 20px;
       }
@@ -28,6 +33,7 @@
         margin-bottom: 1rem;
       }
       p{
+        font-size: 18px;
         color: $pColor;
       }
     }
@@ -85,4 +91,7 @@
     margin-bottom: 0;
     margin-right: 30px;
   }
+}
+#our-vision{
+  margin-top:120px;
 }

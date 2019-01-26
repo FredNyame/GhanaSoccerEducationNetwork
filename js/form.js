@@ -16,7 +16,6 @@ class UI{
   static showError(fieldInput ,error){
     //If there is an error add a class to the form input
     fieldInput.classList.add('error');
-    //console.log('hello');
     
     // Get field id or name
     var id = fieldInput.id || fieldInput.name;
@@ -56,7 +55,8 @@ class UI{
 
       // Otherwise, insert it after the field
       if (!label) {
-        formField.parentNode.insertBefore( message, formField.nextElementSibling );
+        /* formField.parentNode.insertBefore( message, formField.nextElementSibling); */
+        formField.parentNode.appendChild( message);
       }
      }
 

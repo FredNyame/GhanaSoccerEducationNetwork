@@ -1,7 +1,7 @@
 .btn{
   display: inline-block;
   margin: 10px 0px;
-  padding: 1.35rem 2.5rem;
+  padding: 1.25rem 2rem;
   border-radius: 2px;
   font-weight: 600;
   font-size: 1.13rem;
@@ -10,8 +10,9 @@
   box-shadow: 0 15px 25px -8px rgba(0,0,0,.15), 0 0 1px 0 rgba(26,27,31,.05);
   text-shadow: 0 0.5px 2px rgba(0,0,0,.2);
   cursor: pointer;
+  transition: all 0.5s;
 }
-.btn-primary{
+.btn-primary{ 
   background: $btnprimary;
   color: $primary;
   &:hover{

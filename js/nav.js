@@ -5,6 +5,9 @@
 (function () {
   //Get the element
   const menuItem = document.querySelector('.mobile-container');
+  const dateElm = document.querySelector('#date');
+  //Use Js to change the year for the footer Copyright
+  dateElm.innerHTML = new Date().getFullYear();
   //li items 
   const menuItems = document.querySelectorAll('.nav_li');
   //Add event to click

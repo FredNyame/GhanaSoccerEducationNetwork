@@ -1,0 +1,206 @@
+.wrap-row{
+  position: relative;
+  .wrap-content{
+    width: 100%;
+    height: 100%;
+    .athlete{
+      display: inline-block;
+      position: relative;
+      height: 500px;
+      width: 100%;
+      margin-bottom: 50px;
+      background: #949494;
+      .content{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        .info-media{
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          transition: all 0.5s;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .info-person{
+          width: 100%;
+          color: white;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          text-align: right;
+          padding-left: 30px;
+          padding-right: 30px;
+          padding-bottom: 40px;
+          //z-index: 2;
+          mix-blend-mode: luminosity;
+          text-shadow: 0 0 15px rgba(40, 39, 41, 0.2);
+          .info-name, .info-title{
+            display: block;
+          }
+          .info-name{
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+          }
+          .info-title{
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 1rem;
+            mix-blend-mode: difference;
+          }
+        }
+      }
+
+      .desc{
+        width: 100%;
+        height: 100%;
+        background-color: #282729;
+        color: white;
+        left: 0;
+        opacity: 0;
+        padding: 40px 20px;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        visibility: hidden;
+        overflow-y: scroll;
+        transition: all 0.5s;
+        &.show{
+          //position: absolute;
+          //left: 0;
+          //top: 0;
+          opacity: 1;
+          visibility: visible;
+          //z-index: 2;
+        }
+        span{
+          display: block;
+        }
+        .info-name{
+          font-size: 1.5rem;
+          margin-bottom: 10px;
+        }
+        .info-title, .info-grad, .info-home{
+          color: rgba(255, 255, 255, 0.9);
+          font-size: 1rem;
+          mix-blend-mode: difference;
+        }
+        .info-details{
+          margin-top: 20px;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) and (min-width: 800px){
+.wrap-row {
+  margin-bottom: 20px;
+  .wrap-content{
+    .athlete{
+      height: 100%;
+      margin-right: 50px;
+      margin-bottom: 0px;
+    }
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    .athlete{
+      width: calc(33.333333333% - 13.333333333px);
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    .athlete:last-child{
+      margin-right: 0px;
+    }
+  }
+  .grid{
+    display: grid;
+    grid-template-areas:
+    'wide-tall . .'
+    'wide-tall . .';
+    //grid-gap: 20px;
+    .athlete{
+      margin-right: 0px;
+    }
+    .wide-tall{
+      grid-area: wide-tall;
+      height: 100%;
+      //width: 470px;
+      //min-height: 400px;
+    }
+    .xmedium{
+      //grid-area: xmedium;
+    }  
+    .xsmall{
+      //grid-area: xsmall;
+      //width: 265px;
+    }
+  }
+} 
+}
+
+@media screen and (min-width: 800px){
+.left{
+  margin-bottom: 10px !important;
+}
+.wrap-row {
+  margin-bottom: 40px;
+  .wrap-content{
+    width: 100%;
+    .athlete{
+      display: block;
+      position: relative;
+      height: 357px;
+      margin-right: 40px;
+      margin-bottom: 0;
+    }
+  }
+  .flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    .athlete{
+      margin-right: 20px;
+      width: calc(40% - 33.333333333px);
+     }
+     .athlete:last-child{
+       margin-right: 0px;
+     }
+     .medium{
+      width: calc(33.333333333% - 23.333333333px);
+    }
+    .small{
+      width: calc(25%); 
+    }
+  }
+  .grid{
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    'wide-tall . .'
+    'wide-tall . .';
+    grid-gap: 40px;
+    .athlete{
+      margin-right: 0px;
+    }
+    .wide-tall{
+      grid-area: wide-tall;
+      height: 100%;
+    }
+    .xmedium{
+      //grid-area: xmedium;
+      //width: calc(33.333333333% - 13.333333333px);
+    }
+    .xsmall{
+      //grid-area: xsmall;
+      //width: calc(25%); 
+    }
+  }
+}
+}

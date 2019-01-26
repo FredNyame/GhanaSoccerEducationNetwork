@@ -1,7 +1,4 @@
 @include mediaLG{
-  #about, #contact, #appliacation{
-    //text-align: left;
-  }
 header.top{
   .header-container{
     max-width: 1000px;
@@ -67,7 +64,7 @@ header.top{
 #banner{
   .container{
     h1{
-      font-size: 3.7rem;
+      font-size: 3rem;
     }
   }
 }
@@ -135,6 +132,9 @@ footer{
 }
 
 @include mediaMdS{
+  #row-athlete{
+    padding-bottom: 0px;
+  }
   .faq-container{
     padding: 20px 20px;
   }
@@ -149,25 +149,34 @@ footer{
 
 @include mediaMdSS{
   #banner{
-    margin-top: 16vh;
+    //margin-top: 20vh;
     .container{
       h1{
-        font-size: 3.5rem;
-      }
+        font-size: 2.8rem;
+      } 
       .tagline{
         font-size: 1rem;
-        letter-spacing: $font16px;
       }
     }
   }
   #app-form{
     padding-bottom: 10px;
+    .form-wrapper{
+      padding: 50px 10px 0 10px;
+    }
   }
   #appliacation{
     #banner{
-      margin-top: 20px;
+      //margin-top: 20px;
       h1{
         font-size: 2.3rem;
+      }
+    }
+  }
+  #resource, #athlete{
+    #banner{
+      h1{
+        font-size: 3rem;
       }
     }
   }
@@ -194,7 +203,7 @@ footer{
     }
   }
 
-.form-wrapper {
+.form-wrapper{
   padding: 50px 10px 0 10px;
 }
 .quick-contact{
@@ -203,6 +212,7 @@ footer{
   text-align: center;
    .quick-info{
     margin-bottom: 30px;
+    padding: 2rem;
   }
 }
 }
@@ -230,9 +240,9 @@ footer{
   //margin-top: 16vh;
   .container{
     h1{
-      font-size: 50px;
+      font-size: 45px;
       //line-height: 1.6;
-      margin-bottom: 0;
+      //margin-bottom: 0;
     }
     .welcome{
       font-size: 14px;
@@ -248,11 +258,16 @@ footer{
 #about, #contact{
   min-height: 420px;
 }
+.left{
+  padding: 0 !important;
+  margin-bottom: 20px;
+}
 .top_heading{
   font-size: 34px;
   letter-spacing: $font30px;
   padding: 0 10px;
 }
+
 .col-row{
   .col-p{
     font-size: 1rem;

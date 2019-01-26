@@ -7,7 +7,7 @@
   overflow-y: hidden;
 }
 /*Header banner Styling*/
-#about, #contact, #appliacation, #resource{
+#about, #contact, #appliacation, #resource, #athlete{
   #banner{
     text-align: center;
     position: absolute;
@@ -17,12 +17,12 @@
   }
 }
 #about, #contact{
-  min-height: 580px;
+  min-height: 500px;
 }
-#appliacation, #resource{
+#appliacation, #resource, #athlete{
   min-height: 300px;
   #banner{
-    margin-top: 50px;
+    margin-top: 20px;
   }
 }
 #appliacation{
@@ -32,14 +32,14 @@
     }
   }
 }
-#resource{
+#resource, #athlete{
   #banner{
     h1{
-      font-size: 4.6rem;;
+      font-size: 4rem;;
     }
   }
 }
-#home, #about, #contact, #appliacation, #resource{
+#home, #about, #contact, #appliacation, #resource, #athlete{
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
@@ -59,6 +59,9 @@
 }
 #resource{
   background: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/resourceBck.png");
+}
+#athlete{
+  background: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("../images/bckAthlete.png");
 }
 header{
   width: 100%;
@@ -91,8 +94,8 @@ header{
         display: flex;
         align-items: center;
         .nav_li{
-          //padding: 0 20px;
-          margin: 0 20px;
+          padding: 0 20px;
+          //margin: 0 20px;
           a{
             font-size: 0.83rem;
             color: $primary;
@@ -173,7 +176,7 @@ header{
       user-select: none;
       z-index: 5000;
       .menu{
-        width: 30px;
+        width: 25px;
         height: 2px;
         background: $primary;
         margin-bottom: 6px;
@@ -207,8 +210,10 @@ header{
  }
 }
 #banner{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   width: 100%;
-  margin-top:25vh;
   .container{
     .welcome{
       display: none;
@@ -220,17 +225,17 @@ header{
     }
     h1{
       color: $primary;
-      font-size: 4.6rem;
+      font-size: 3.5rem;
       line-height: 1.2;
-      margin-bottom: 1.2rem;
-      text-shadow: 0 0.5px 2px rgba(0,0,0,.8);
+      margin-bottom: 10px;
+      text-shadow: 0 0.5px 2px rgba(0,0,0,.5);
     }
     .tagline{
       color: $primary;
-      font-weight: 200;
+      font-weight: 300;
       font-size: 1.13rem;
       line-height: 1.7;
-      margin-bottom: 2rem;
+      margin-bottom: 1rem;
       letter-spacing: $font18px;
     }
     a{
@@ -256,13 +261,13 @@ header{
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   position: fixed;
-  right: 30px;
+  right: 10px;
   background: #F01D1D;
   border-radius: 50px;
-  padding: 1.1em;
+  padding: 0.9em;
   transition: all 0.5s ease-in-out;
   transform: translateX(100px);
   z-index: 2;

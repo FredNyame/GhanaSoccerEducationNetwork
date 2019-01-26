@@ -237,12 +237,10 @@ footer{
   }
 }
 #banner{
-  //margin-top: 16vh;
+  margin-top: 20px;
   .container{
     h1{
-      font-size: 45px;
-      //line-height: 1.6;
-      //margin-bottom: 0;
+      font-size: 30px;
     }
     .welcome{
       font-size: 14px;
@@ -251,7 +249,6 @@ footer{
     }
     .tagline{
       margin-bottom: 0;
-      //line-height: 0;
     }
   }
 }
@@ -303,5 +300,7 @@ footer{
 
 /* Small Smartphones Screen Styling*/
 @include mediaSx{
-
+.top-arrow{
+  right: 30px;
+}
 }

@@ -1974,8 +1974,11 @@ footer .container .copyright {
     -webkit-transform: translateY(-55%);
             transform: translateY(-55%);
   }
+  #banner {
+    margin-top: 20px;
+  }
   #banner .container h1 {
-    font-size: 45px;
+    font-size: 30px;
   }
   #banner .container .welcome {
     font-size: 14px;
@@ -2028,4 +2031,9 @@ footer .container .copyright {
 }
 
 /* Small Smartphones Screen Styling*/
+@media screen and (max-width: 376px) {
+  .top-arrow {
+    right: 30px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

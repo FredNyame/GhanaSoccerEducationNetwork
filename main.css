@@ -352,8 +352,8 @@ img {
 }
 
 #athlete {
-  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("../images/bckAthlete.png");
-  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("../images/bckAthlete.png");
+  background: -webkit-gradient(linear, right top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(53, 53, 49, 0.6))), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bckAthlete.png");
+  background: linear-gradient(top right, rgba(0, 0, 0, 0.4), rgba(53, 53, 49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bckAthlete.png");
 }
 
 header {
@@ -1037,7 +1037,7 @@ footer .container .copyright {
       flex-basis: 50%;
   height: 500px;
   background: #fff;
-  background: url("../images/athlete1.png");
+  background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/athlete1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;

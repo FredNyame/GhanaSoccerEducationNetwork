@@ -116,25 +116,50 @@ img {
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit, minmax(348px, 1fr)); 
   .col-3{
+    position: relative;
     //background: $primary;
     border-radius: 4px;
     padding: 60px 20px 50px 20px;
     //box-shadow: 0 5px 20px -8px rgba(0,0,0,.15), 0 0 1px 0 rgba(26,27,31,.05);
     margin: 0 5px;
-    .sub_heading{
-      font-size: 20px;
-      margin-bottom: 20px;
-      text-align: left;
+    overflow: hidden;
+    .service-wrap{
+      width: 100%;
+      .sub_heading{
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-align: left;
+      }
+      .img-sub-svg{
+        width: 80px;
+        margin: 0 auto 30px auto;
+      }
+      .col-p{
+        color: $pColor;
+        font-size: 18px;
+        letter-spacing: $font18px;
+      }
     }
-    .img-sub-svg{
-      width: 80px;
-      margin: 0 auto 30px auto;
+    .info-desc{
+      width: 100%;
+      height: 100%;
+      background-color: #282729;
+      color: white;
+      left: 0;
+      opacity: 0;
+      padding: 40px 20px;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      visibility: hidden;
+      overflow-y: scroll;
+      -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+      &.show{
+        opacity: 1;
+        visibility: visible;
+      }
     }
-  }
-  .col-p{
-    color: $pColor;
-    font-size: 18px;
-    letter-spacing: $font18px;
   }
 }
 

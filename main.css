@@ -131,26 +131,54 @@ img {
 }
 
 .col-row .col-3 {
+  position: relative;
   border-radius: 4px;
   padding: 60px 20px 50px 20px;
   margin: 0 5px;
+  overflow: hidden;
 }
 
-.col-row .col-3 .sub_heading {
+.col-row .col-3 .service-wrap {
+  width: 100%;
+}
+
+.col-row .col-3 .service-wrap .sub_heading {
   font-size: 20px;
   margin-bottom: 20px;
   text-align: left;
 }
 
-.col-row .col-3 .img-sub-svg {
+.col-row .col-3 .service-wrap .img-sub-svg {
   width: 80px;
   margin: 0 auto 30px auto;
 }
 
-.col-row .col-p {
+.col-row .col-3 .service-wrap .col-p {
   color: #575757;
   font-size: 18px;
   letter-spacing: -0.008em;
+}
+
+.col-row .col-3 .info-desc {
+  width: 100%;
+  height: 100%;
+  background-color: #282729;
+  color: white;
+  left: 0;
+  opacity: 0;
+  padding: 40px 20px;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  visibility: hidden;
+  overflow-y: scroll;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.col-row .col-3 .info-desc.show {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* Mobile Breakpoints */
@@ -555,6 +583,7 @@ header.reveal {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 100%;
+  margin-top: 20px;
 }
 
 #banner .container .welcome {
@@ -781,7 +810,7 @@ header.reveal {
 
 .wrapper .slide-wrap .words .words-p .word:before {
   content: "“";
-  color: #E0DDD7;
+  color: rgba(240, 29, 29, 0.2);
   font-family: georgia, serif;
   font-size: 12em;
   position: absolute;
@@ -915,9 +944,18 @@ footer .container .social .ind-social-logo {
           align-items: center;
 }
 
-footer .container .social .ind-social-logo img {
+footer .container .social .ind-social-logo a {
   width: 30px;
   height: 30px;
+}
+
+footer .container .social .ind-social-logo a svg {
+  width: 100%;
+  height: 100%;
+}
+
+footer .container .social .ind-social-logo a:hover .a {
+  fill: #F01D1D;
 }
 
 footer .container .line {
@@ -1035,7 +1073,7 @@ footer .container .copyright {
 #founders .row-founder .img-founder {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%;
-  height: 500px;
+  min-height: 500px;
   background: #fff;
   background: url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/athlete1.png");
   background-size: cover;
@@ -1066,8 +1104,25 @@ footer .container .copyright {
 }
 
 #founders .row-founder .p-founder p {
-  font-size: 18px;
+  font-size: 1rem;
   color: #575757;
+}
+
+#missionVision {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#missionVision #mission {
+  width: 100%;
+  padding: 120px 0 130px 0;
+}
+
+#missionVision #our-vision {
+  width: 100%;
+  padding: 120px 0 130px 0;
+  background: #f9f9f9;
 }
 
 /*Frequently Asked questions Styling*/
@@ -1141,10 +1196,6 @@ footer .container .copyright {
 #action .sub_heading {
   margin-bottom: 0;
   margin-right: 30px;
-}
-
-#our-vision {
-  margin-top: 120px;
 }
 
 .contact-wrapper {
@@ -1851,6 +1902,22 @@ footer .container .copyright {
         -ms-flex-order: 2;
             order: 2;
     padding: 1.5rem 1rem;
+  }
+  #missionVision {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #missionVision #mission {
+    padding: 100px 0;
+  }
+  #missionVision #our-vision {
+    padding: 100px 0 0px 0;
+    background: #f9f9f9;
   }
   footer h2.top_heading {
     font-size: 30px;

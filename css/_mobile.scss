@@ -100,6 +100,17 @@ header.top{
     }
   }
 }
+#missionVision{
+  display: flex;
+  flex-direction: column;
+  #mission{
+    padding:100px 0;
+  }
+  #our-vision{
+    padding:100px 0 0px 0;
+    background: $bckSection;
+  }
+}
 footer{
   h2.top_heading{
     font-size: 30px;

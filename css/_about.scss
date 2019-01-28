@@ -9,7 +9,7 @@
     justify-content: space-between;
     .img-founder{
       flex-basis: 50%;
-      height: 500px;
+      min-height: 500px;
       background: #fff;
       background: url('https://frednyame.github.io/GhanaSoccerEducationNetwork/images/athlete1.png');
       background-size: cover;
@@ -33,10 +33,22 @@
         margin-bottom: 1rem;
       }
       p{
-        font-size: 18px;
+        font-size: 1rem;
         color: $pColor;
       }
     }
+  }
+}
+#missionVision{
+  display: flex;
+  #mission{
+    width: 100%;
+    padding:120px 0 130px 0;
+  }
+  #our-vision{
+    width: 100%;
+    padding:120px 0 130px 0;
+    background: $bckSection;
   }
 }
 /*Frequently Asked questions Styling*/
@@ -91,7 +103,4 @@
     margin-bottom: 0;
     margin-right: 30px;
   }
-}
-#our-vision{
-  margin-top:120px;
 }

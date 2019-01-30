@@ -17,7 +17,6 @@ function mainScrollFun(){
   navBarscrollFun(scrollBarValue);
   //Show Top Arrow
   showTopArrow(scrollBarValue);
-  //console.log('inside: '+ prevScrollValue);
 }
 
 ////////////////////////////////////////////////////////////
@@ -68,7 +67,6 @@ function smoothScrollFun(setTarget, setDuration){
   let startPos = window.pageYOffset; //Current Position of the scrollBar
   let distace = targetPos - startPos; //Distance between the top and scrollBar
   let startTime = null; //start time for timer
-  console.log('Target ' + target + ' Duration: ' + duration + ' Pos: ' + targetPos);
 
   //Actully animating function
   function animateScroll(currentTime){

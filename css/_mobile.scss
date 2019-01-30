@@ -14,7 +14,7 @@ header.top{
       padding: 4.5rem 0;
       height: auto;
       min-height: 100vh;
-      background: #333;
+      background: #1a1a1a;
       transform: translate3d(320px, 0, 0);
       z-index: 4000;
       overflow-y: scroll;
@@ -22,7 +22,7 @@ header.top{
         display: block;
         .nav_li{
           padding: 20px 80px 20px 26px;
-          border-top: 1px solid #3d4242;
+          border-top: 1px solid #313535;
           transition: all 0.5s ease-in-out;
           transform: translate3d(600px, 0, 0);
           margin: 0;

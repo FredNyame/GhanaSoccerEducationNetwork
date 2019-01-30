@@ -181,6 +181,10 @@ img {
   visibility: visible;
 }
 
+.col-row .col-3 .info-desc p {
+  font-weight: 300;
+}
+
 /* Mobile Breakpoints */
 @-webkit-keyframes fade {
   0% {
@@ -446,7 +450,7 @@ header.top .header-container .main_nav .nav_ul .nav_li {
 }
 
 header.top .header-container .main_nav .nav_ul .nav_li a {
-  font-size: 0.83rem;
+  font-size: 0.815rem;
   color: #fff;
   font-weight: 600;
   letter-spacing: 0.08em;
@@ -574,7 +578,7 @@ header.reveal {
   top: 50px;
   -webkit-transform: translateY(-50px);
           transform: translateY(-50px);
-  background: rgba(51, 51, 51, 0.5);
+  background: #1a1a1a;
 }
 
 #banner {
@@ -906,7 +910,7 @@ footer {
 
 footer #f-row {
   padding: 60px 0;
-  background-color: #101013;
+  background-color: #1a1a1a;
   color: #f4f4f4;
 }
 

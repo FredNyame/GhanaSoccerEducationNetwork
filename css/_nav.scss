@@ -7,7 +7,7 @@
   overflow-y: hidden;
 }
 /*Header banner Styling*/
-#about, #contact, #appliacation, #resource, #athlete{
+#about, #contact, #appliacation, #resource, #athlete, #blog{
   #banner{
     text-align: center;
     position: absolute;
@@ -19,7 +19,7 @@
 #about, #contact{
   min-height: 500px;
 }
-#appliacation, #resource, #athlete{
+#appliacation, #resource, #athlete, #blog{
   min-height: 300px;
   #banner{
     margin-top: 20px;
@@ -32,36 +32,39 @@
     }
   }
 }
-#resource, #athlete{
+#resource, #athlete, #blog{
   #banner{
     h1{
       font-size: 4rem;;
     }
   }
 }
-#home, #about, #contact, #appliacation, #resource, #athlete{
+#home, #about, #contact, #appliacation, #resource, #athlete, #blog{
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
 }
 #home{
-  background: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/banner.png");
+  background-image: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/banner.png");
 }
 #about{
-  background: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/behind.png");
+  background-image: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/behind.png");
 }
 #contact{
-  background: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/contactBanner.png");
+  background-image: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/contactBanner.png");
 }
 #appliacation{
-  background: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/appBanner.png");
+  background-image: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/appBanner.png");
 }
 #resource{
-  background: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/resourceBck.png");
+  background-image: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/resourceBck.png");
 }
 #athlete{
-  background: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bckAthlete.png");
+  background-image: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bckAthlete.png");
+}
+#blog{
+  background-image: linear-gradient(top right,rgba(0,0,0,0.4), rgba(53, 53,49, 0.6)), url("https://frednyame.github.io/GhanaSoccerEducationNetwork/images/bckAthlete.png");
 }
 header{
   width: 100%;

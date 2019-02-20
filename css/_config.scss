@@ -125,14 +125,15 @@ img {
     overflow: hidden;
     .service-wrap{
       width: 100%;
+      text-align: center;
       .sub_heading{
         font-size: 20px;
         margin-bottom: 20px;
-        text-align: left;
+        //text-align: left;
       }
       .img-sub-svg{
-        width: 80px;
-        margin: 0 auto 30px auto;
+        width: 76px;
+        margin: 0 auto 10px auto;
       }
       .col-p{
         color: $pColor;

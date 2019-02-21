@@ -27,8 +27,10 @@
       .blog-img{
         position: relative;
         flex-basis: 50%;
-        width: 472px;
+        max-width: 472px;
+        width: 100%;
         min-height: 307px;
+        height: 307px;
         background: #ccc;
         border-radius: 3px;
         box-shadow: 0 10px 20px 0px rgba(0,0,0,0.1);
@@ -52,20 +54,16 @@
         flex-basis: 50%;
         padding: 40px 0 60px 0;
         .blog-title{
-          //position: relative;
           margin-bottom: 10px; 
           h4{
             position: relative;
-            //top: 40px;
             left: -20px;
             font-size: 28px;
             color: #120404;
-            margin-bottom: 10px; 
           }
         }
         .blog-exempt{
           position: relative;
-          //top: 80px;
           left: -10px;
           color: #575757;
           font-size: 1rem;
@@ -74,7 +72,6 @@
         .strong{
           position: absolute;
           font-size: 18px;
-          //top: 190px;
           left: 40px;
         }
       }

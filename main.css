@@ -1614,6 +1614,10 @@ footer .container .copyright {
 .wrap-row .wrap-content .athlete .content .info-media img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 .wrap-row .wrap-content .athlete .content .info-person {
@@ -1741,7 +1745,7 @@ footer .container .copyright {
   .wrap-row .wrap-content .athlete {
     display: block;
     position: relative;
-    height: 357px;
+    height: 310px;
     margin-right: 40px;
     margin-bottom: 0;
   }

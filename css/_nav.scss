@@ -155,14 +155,19 @@ header{
             display: block;
             opacity: 1;
           }
-          &:after{
-            content: '\f0d7';
-            font-family: "FontAwesome";
-            color: #fff;
-          }
           &:hover:after{
             color: #ddd;
           }
+        }
+        #main-dropdown > a{
+          
+            &:after{
+              content: '\f0d7';
+              font-family: "FontAwesome";
+              color: #fff;
+              padding-left: 10px;
+            }
+          
         }
         .nav_li:last-child{
           padding: 0 0 0 20px
